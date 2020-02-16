@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="commentM">
+	<insert id="commentInsert" parameterType="commentVO">
+		INSERT INTO comments(contents, user_no, board_no, regdate)
+		VALUES(#{contents}, #{userNo}, #{boardNo},  NOW() )	
+	</insert>
+	
+	<select id="commentList" parameterType="PageVO" resultType="commentVO">
+		SELECT c.idx idx, c.contents contents, c.user_no userNo, c.board_no boardNo, c.regdate regdate, c.status status,
+      		   u.name name
+		FROM comments c, users u
+		WHERE c.user_no = u.idx
+		AND status = 'A'
+		AND board_no = #{boardNo}
+		ORDER BY  c.regdate DESC
+		LIMIT #{start}, #{end} 
+	</select>
+	
+	<select id="commentListTotalCount" parameterType="int" resultType="int">
+		SELECT COUNT(*)
+		FROM comments c, users u
+		WHERE c.user_no = u.idx
+		AND status = 'A'
+		AND board_no = #{boardNo}
+		ORDER BY  c.regdate DESC
+	</select>
+
+</mapper>

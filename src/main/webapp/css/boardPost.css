@@ -1,0 +1,134 @@
+ html, body {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ a {
+     text-decoration: none;
+     color: #bbbbbb;
+}
+ul {
+     list-style: none;
+     padding: 0;
+     margin: 10px;
+}
+.header-container{
+ 	height: 50px;
+ 	border-bottom: 1px solid #000;
+ }
+ .header-user{
+ 	width: 80px;
+ 	 position: relative;
+ 	top: 15px;
+ }
+  .login-container{
+ float: right;
+ width: 350px;
+ height: 50px;
+ }
+.header-btn{
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	font-size: 25px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius: 15px;
+	cursor: pointer;
+	 
+}
+.login-btn, .white-btn ,.logout-btn{
+	margin: 5px 10px;
+	 float: right;
+}
+
+.title-text{
+	text-align: center;
+	margin: auto;
+}
+.main-container{
+	width: 70%;
+	border-left: 1px solid #000;
+	border-right:  1px solid #000;
+	margin: auto 15%;
+}
+.board-title-container{
+	border-bottom:  1px solid #000;
+}
+.name{
+	float:left;
+}
+.date{
+	float:right;
+}
+.title{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
+.board-contents-container{
+	margin: 10px;
+}
+.board-update-container{
+	float: right;
+	width: 70px;
+}
+.update-btn{
+	width: 50px;
+	border-radius: 25px;
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	margin: 5px 10px;
+	cursor: pointer;
+}
+.comment-white-container{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.board-comment{
+	border: none;
+	margin: 10px;
+	width: 90%;
+}
+.board-comment:focus{
+	border: outline:2px solid #d50000;
+}
+.comment-btn{
+	border-radius: 17px;
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	font-size: 15px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	cursor: pointer;
+}
+.comment-contents{
+	height: 100px;
+	margin: 10px;
+	bo
+}
+.comment-name{
+	font-size: 15px;
+}
+.comment-date{
+	float: right;
+}
+
+.add-btn{
+	width: 100%;
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	font-size: 15px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	cursor: pointer;
+}

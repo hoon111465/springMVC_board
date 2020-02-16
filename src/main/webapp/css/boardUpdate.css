@@ -1,0 +1,69 @@
+ .idx {
+    width: 50px;
+  }
+  .title {
+    width: 150px;
+  }
+  .content {
+    width: 250px;
+  }
+  .header-container{
+ 	height: 50px;
+ 	border-bottom: 1px solid #000;
+ }
+ .header-user{
+ 	width: 80px;
+ 	 position: relative;
+ 	top: 15px;
+ }
+  .login-container{
+ float: right;
+ width: 350px;
+ height: 50px;
+ }
+.header-btn{
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	font-size: 25px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius: 15px;
+	cursor: pointer;
+	 
+}
+.login-btn, .white-btn ,.logout-btn{
+	margin: 5px 10px;
+	 float: right;
+}
+
+/*main*/
+
+ .main-container{
+	width: 70%;
+	border-left: 1px solid #000;
+	border-right:  1px solid #000;
+	margin: auto 15%;
+}
+.title-container{
+	margin: 10px;
+}
+.title-container>input{
+	width: 100%;
+}
+.btn-container {
+	height: 50px;
+	float: right;
+}
+.submit-btn, .cencal-btn{
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	font-size: 25px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius: 15px;
+	cursor: pointer;
+}

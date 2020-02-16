@@ -1,0 +1,69 @@
+ html, body {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ a {
+     text-decoration: none;
+     color: #bbbbbb;
+}
+.header-container{
+ 	height: 50px;
+ 	border-bottom: 1px solid #000;
+ }
+ .login-container{
+ float: right;
+ width: 350px;
+ height: 50px;
+ }
+ .header-user{
+ 	width: 80px;
+ 	position: relative;
+ 	top: 15px;
+ }
+.header-btn{
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	font-size: 25px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius: 15px;
+	cursor: pointer;
+	 
+}
+.login-btn, .white-btn ,.logout-btn{
+	margin: 5px 10px;
+	 float: right;
+}
+
+
+.title-text{
+	text-align: center;
+	margin: auto;
+}
+table{
+	margin: auto;
+}
+ table, th, td {
+    border: 1px solid #444444;
+   text-align: center;
+  
+  }
+  .idx {
+    width: 50px;
+  }
+  .title {
+    width: 200px;
+     overflow:hidden;
+    text-overflow:ellipsis;
+
+  }
+  .name {
+    width: 100px;
+  }
+
+ .paginate-container{
+ 	text-align: center;
+ }

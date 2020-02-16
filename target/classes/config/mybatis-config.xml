@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    
+     <typeAliases>
+            <typeAlias type="com.scriptwhale.board.vo.IndexVO" alias="IndexVO"/>
+            <typeAlias type="com.scriptwhale.board.vo.UserVO" alias="UserVO"/>
+            <typeAlias type="com.scriptwhale.board.vo.BoardVO" alias="BoardVO"/>
+            <typeAlias type="com.scriptwhale.board.vo.CommentVO" alias="CommentVO"/>
+            <typeAlias type="com.scriptwhale.board.vo.PageVO" alias="PageVO"/>
+     </typeAliases>
+        
+        <!-- 매퍼 경로 설정 (sql구문들이 들어가는 곳)-->
+	<mappers>
+		<mapper resource="mappers/index.xml"></mapper>
+		<mapper resource="mappers/user.xml"></mapper>
+		<mapper resource="mappers/board.xml"></mapper>
+		<mapper resource="mappers/comment.xml"></mapper>
+	</mappers>
+</configuration>

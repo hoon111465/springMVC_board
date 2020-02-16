@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    
+     <typeAliases>
+            <typeAlias type="com.scriptwhale.board.vo.indexVO" alias="indexVO"/>
+     </typeAliases>
+        
+        <!-- 매퍼 경로 설정 (sql구문들이 들어가는 곳)-->
+	<mappers>
+		<mapper resource="mappers/index.xml"></mapper>
+	</mappers>
+</configuration>
